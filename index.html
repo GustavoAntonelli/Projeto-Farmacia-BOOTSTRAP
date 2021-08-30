@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap-4.6.0-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html"><img src="./imagens/logo_farma.png" width="110" height="60"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto bd-navbar">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quem_somos.html">Quem Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicos.html">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formulario.html">Cadastro</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+        <button class="btn btn-dark mr-1" onclick="aumentarFonte()"><img src="./imagens/icon_font_more.png"></button>
+        <button class="btn btn-dark mr-1" onclick="diminuirFonte()"><img src="./imagens/icon_font_less.png"></button>
+        <button class="btn btn-dark mr-1" onclick="modoClaro()"><img src="./imagens/icon_sun.png"></button>
+        <button class="btn btn-dark mr-1" onclick="modoEscuro()"><img src="./imagens/icon_moon.png"></button>
+      </div>
+    </nav>
+  </header>
+
+
+  <section class="container">
+
+    <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./imagens/image.jpg" alt="Primeiro Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./imagens/image1.jpg" alt="Segundo Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./imagens/image2.jpg" alt="Terceiro Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./imagens/image3.jpg" alt="Terceiro Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./imagens/image4.jpg" alt="Terceiro Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./imagens/image5.jpg" alt="Terceiro Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./imagens/image6.jpg" alt="Terceiro Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./imagens/image7.jpg" alt="Terceiro Slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <img src="./imagens/banner2.jpg" class="img-fluid">
+      </div>
+
+      <div class="col-md-6">
+        <img src="./imagens/banner3.jpg" class="img-fluid">
+      </div>
+    </div>
+
+    <p class="display-4" style="color: #9D0520;">Destaques</p>
+
+
+    <div id="carrosel_2" class="carousel slide carousel-multi-item mb-5" data-ride="carousel">
+
+      <!--Controls-->
+      <div class="controls-top">
+        <a class="btn-floating" href="#carrosel_2" data-slide="prev"><i class="bi bi-arrow-left"></i></a>
+        <a class="btn-floating" href="#carrosel_2" data-slide="next"><i class="bi bi-arrow-right"></i></a>
+      </div>
+      <!--/.Controls-->
+
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
+
+      </ol>
+      <!--/.Indicators-->
+
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/destaque1.jpg" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Protetor Solar Corporal Neutrogena Sun Fresh FPS 50 com 200ml</h6>
+                <p class="card-text">Nivea 230g</p>
+                <p class="card-text">R$67,49</p>
+                <a class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/destaque2.jpg" width="60" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Buscofem 400mg com 10 cápsulas
+                  card's content.</h6>
+                <p class="card-text">Buscofem 20g</p>
+                <p class="card-text">R$21,09</p>
+                <a class="btn btn-primary my-3">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/destaque3.jpg" width="60" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Buscofem 400mg com 2 cápsulas</h6>
+                <p class="card-text">Buscofem 60g</p>
+                <p class="card-text">R$6,45</p>
+                <a class="btn btn-primary my-3">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/destaque5.jpg" width="60" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title mb-4">Atrofem com 2 cápsulas</h6>
+                <p class="card-text">Atrofem 20g</p>
+                <p class="card-text">R$4,85</p>
+                <a class="btn btn-primary my-4">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item">
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/destaque4.jpg" width="60" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Atrofem com 10 cápsulas</h6>
+                <p class="card-text">10 Cápsulas Gelatinosas com 20g</p>
+                <p class="card-text">R$19,99</p>
+                <a class="btn btn-primary my-3">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/destaque6.jpg" width="60" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Shampoo Johnson's Gotas de Brilho</h6>
+                <p class="card-text">400ml</p>
+                <p class="card-text">R$14,95</p>
+                <a class="btn btn-primary my-3">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/destaque7.jpg" width="60" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Gel Nivea Hidratante Facial com 100ml</h6>
+                <p class="card-text">Nivea 100ml</p>
+                <p class="card-text">R$29,19</p>
+                <a class="btn btn-primary my-3">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/destaque8.jpg" width="60" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Suplemento Vitamínico Cogmax com 60 cápsulas</h6>
+                <p class="card-text">Cogmax 60 Cápsulas</p>
+                <p class="card-text">R$77,99</p>
+                <a class="btn btn-primary my-3">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.Second slide-->
+
+      </div>
+      <!--/.Slides-->
+
+    </div>
+    <!--/.Carousel Wrapper-->
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <img src="./imagens/banner0.jpg" class="img-fluid">
+      </div>
+
+      <div class="col-md-6">
+        <img src="./imagens/banner1.jpg" class="img-fluid">
+      </div>
+    </div>
+
+    <p class="display-4" style="color: #9D0520;">Mais Vendidos</p>
+
+    <div id="carrosel_3" class="carousel slide carousel-multi-item mb-5" data-ride="carousel">
+
+      <!--Controls-->
+      <div class="controls-top">
+        <a class="btn-floating" href="#carrosel_3" data-slide="prev"><i class="bi bi-arrow-left"></i></a>
+        <a class="btn-floating" href="#carrosel_3" data-slide="next"><i class="bi bi-arrow-right"></i></a>
+      </div>
+      <!--/.Controls-->
+
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
+
+      </ol>
+      <!--/.Indicators-->
+
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/maisV1.jpg" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Loção Hidratante Corporal Eucerin pH5 com 400ml</h6>
+                <p class="card-text">400ml</p>
+                <p class="card-text">R$119,99</p>
+                <a class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/maisV2.jpg" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Neosil 50mg Suplemento Alimentar com 90 comprimidos</h6>
+                <p class="card-text">R$297,99</p>
+                <a class="btn btn-primary mt-4">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/maisV3.jpg" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Enxaguante Bucal Malvatrikids Júnior</h6>
+                <p class="card-text">250ml</p>
+                <p class="card-text">R$16,79</p>
+                <a class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/maisV4.jpg" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Suplemento Alimentar Dr. Good Cálcio + D3 com 30 Unidades</h6>
+                <p class="card-text">R$43,85</p>
+                <a class="btn btn-primary mt-4">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item">
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/maisV5.jpg" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Gel Pós Picadas de Insetos Free Bite com 20ml</h6>
+                <p class="card-text">Calminex Ice</p>
+                <p class="card-text">R$14,99</p>
+                <a class="btn btn-primary mt-3">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/maisV6.jpg" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Fita Remoção Sem Dor Nexcare 25mm x 1,35m</h6>
+                <p class="card-text">Nexcare</p>
+                <p class="card-text">R$25,19</p>
+                <a class="btn btn-primary mt-3">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/maisV7.jpg" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Óleo de Limpeza para Banho Eucerin pH5 Pele Sensível e Seca com 200ml</h6>
+                <p class="card-text">200ml</p>
+                <p class="card-text">R$119,00</p>
+                <a class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/maisV8.jpg" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Protetor Solar Umbrella Perfect Skin Claro FPS50 com 50g</h6>
+                <p class="card-text">50g</p>
+                <p class="card-text">R$79,90</p>
+                <a class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.Second slide-->
+
+      </div>
+      <!--/.Slides-->
+
+    </div>
+    <!--/.Carousel Wrapper-->
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <img src="./imagens/image4.jpg" class="img-fluid">
+      </div>
+
+      <div class="col-md-6">
+        <img src="./imagens/image5.jpg" class="img-fluid">
+      </div>
+    </div>
+
+    <p class="display-4" style="color: #9D0520;">Ofertas Especiais</p>
+
+    <div id="carrosel_4" class="carousel slide carousel-multi-item mb-5" data-ride="carousel">
+
+      <!--Controls-->
+      <div class="controls-top">
+        <a class="btn-floating" href="#carrosel_4" data-slide="prev"><i class="bi bi-arrow-left"></i></a>
+        <a class="btn-floating" href="#carrosel_4" data-slide="next"><i class="bi bi-arrow-right"></i></a>
+      </div>
+      <!--/.Controls-->
+
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
+
+      </ol>
+      <!--/.Indicators-->
+
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/ofertaE1.jpg" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Pasta de Dente Colgate Total 12 Clean Mint com 90g</h6>
+                <p class="card-text">90g</p>
+                <p class="card-text">R$7,39</p>
+                <a class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/ofertaE2.jpg" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Enxaguante Bucal Colgate Plax Fresh Mint</h6>
+                <p class="card-text">1000ml - Leve 1000ml Pague 700ml</p>
+                <p class="card-text">R$27,39</p>
+                <a class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/ofertaE3.jpg" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Enxaguante Antisséptico Bucal Colgate Total 12 Clean Mint Zero Álcool com 500ml
+                </h6>
+                <p class="card-text">R$23,49</p>
+                <a class="btn btn-primary mt-4">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/ofertaE4.jpg" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Escova de Dente Colgate PerioGard Extra Macia com 1 unidade</h6>
+                <p class="card-text">1 Unidade</p>
+                <p class="card-text">R$26,42</p>
+                <a class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item">
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/ofertaE5.jpg" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Escova de Dente Colgate Gengiva Therapy com 1 Unidade</h6>
+                <p class="card-text">Novartis</p>
+                <p class="card-text">R$16,09</p>
+                <a class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/ofertaE6.jpg" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Enxaguante Bucal Colgate Total 12 Gengiva Reforçada com 500ml</h6>
+                <p class="card-text">Novartis</p>
+                <p class="card-text">R$24,49</p>
+                <a class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/ofertaE7.jpg" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Escova de Dente Colgate Gengiva Therapy com 3 Unidades</h6>
+                <p class="card-text">Novartis</p>
+                <p class="card-text">R$61,79</p>
+                <a class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./imagens/ofertaE8.jpg" height="180" alt="Card image cap">
+              <div class="card-body">
+                <h6 class="card-title">Pasta de Dente Colgate Total 12 Gengiva Reforçada com 140g</h6>
+                <p class="card-text">Novartis</p>
+                <p class="card-text">R$10,79</p>
+                <a class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.Second slide-->
+
+      </div>
+      <!--/.Slides-->
+
+    </div>
+    <!--/.Carousel Wrapper-->
+
+    <div class="row">
+      <div class="col-md-6 mt-5 text-center">
+        <h2>O melhor da Farmácia você só encontra aqui !</h2>
+      </div>
+      <div class="col-md-6">
+        <img src="./imagens/BLOG-1.png" class="img-fluid mb-4">
+      </div>
+    </div>
+
+  </section>
+
+  <button id="subirTopo" class="btn btnou" onclick="voltarTop()">
+    <i class="bi bi-arrow-90deg-up"></i> voltar ao topo
+  </button>
+
+
+  <footer>
+    <div class="redes">
+      Nos siga nas nossa resdes sociais:
+      <div class="icones">
+        <a href="" class="mr-4 text-reset">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="" class="mr-4 text-reset">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="" class="mr-4 text-reset">
+          <i class="bi bi-google"></i>
+        </a>
+        <a href="" class="mr-4 text-reset">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="" class="mr-4 text-reset">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+      
+    </div>
+    
+
+    <div class="conteudo">
+      <div class="farma">
+        <h6>FARM+</h6>
+        <p id="texto">A jornada é sua e somente sua. Outros podem caminhar com vc mas ninguém pode caminhar por você.</p>
+      </div>
+      <div class="servicos">
+        <h6>SERVIÇOS</h6>
+        <p><a href="#">Convênio Farmácia</a></p>
+        <p><a href="#">Bulário Anvisa</a></p>
+        <p><a href="#">Testes Covid-19</a></p>
+        <p><a href="#">Aferir Pressão</a></p>
+      </div>
+      <div class="institucional">
+        <h6>INSTITUCIONAL</h6>
+        <p><a href="">Trabalhe conosco</a></p>
+        <p><a href="">Aplicativos</a></p>
+      </div>
+      <div class="privacidade">
+        <h6>PRIVACIDADE</h6>
+        <p><a href="#">Política de Cookies</a></p>
+        <p><a href="#">(LGPD)</a></p>
+        <p><a href="#">FAQ</a></p>
+        <p><a href="#">Termos de Uso</a></p>
+
+      </div>
+    </div>
+
+    <div class="copi">
+      <p>&copy;2021 Copyright: Farm+</p>
+    </div>
+
+
+  </footer>
+
+
+
+  
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="./bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+</body>
+
+</html>

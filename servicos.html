@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/servicos.css">
+    <script src="./js/servicos.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html"><img src="./imagens/logo_farma.png" width="110" height="60"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto bd-navbar">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quem_somos.html">Quem Somos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="servicos.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulario.html">Cadastro</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i
+                            class="bi bi-search"></i></button>
+                </form>
+                <button class="btn btn-dark mr-1" onclick="aumentarFonte()"><img
+                        src="./imagens/icon_font_more.png"></button>
+                <button class="btn btn-dark mr-1" onclick="diminuirFonte()"><img
+                        src="./imagens/icon_font_less.png"></button>
+                <button class="btn btn-dark mr-1" onclick="modoClaro()"><img src="./imagens/icon_sun.png"></button>
+                <button class="btn btn-dark mr-1" onclick="modoEscuro()"><img src="./imagens/icon_moon.png"></button>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="container">
+
+        <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 carroimg" src="./imagens/Banner-Cliente-Fidelidadec.png"
+                        alt="Primeiro Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 carroimg" src="./imagens/BANNER-VERDE-COM-BOTAO-PONTILHADO-1.png"
+                        alt="Segundo Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 carroimg" src="./imagens/convenios tmo banner.jpg" alt="Terceiro Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 carroimg" src="./imagens/GP-BANNER-GREAT-PLACE-950x352-20170816.jpg"
+                        alt="Terceiro Slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+
+
+        <h2>Convênio Farmácia para Pequenas e Médias Empresas</h2>
+
+        <p>A Drogarias Pacheco e Drogaria São Paulo com o objetivo de aprimorar o atendimento e estender a prestação de
+            serviço para empresas de média e pequeno porte acabam de lançar o novo modelo de beneficio: Convênio
+            Farmácia – PME.</p>
+
+        <p>Agora sua empresa pode contar com o Convênio Farmácia mais completo do mercado, proporcionando mais valor
+            para sua empresa e mais qualidade de vida para seus funcionários.</p>
+
+        <p>O convênio Farmácia PME é um benefício oferecido pelo Grupo DPSP voltado para as Pequenas e Médias
+            Empresas com no mínimo 50 funcionários e no máximo 250.</p>
+
+        <p>É um Grande benefício para pequenas e médias empresas, não perca a oportunidade de complementar o
+            portfólio de saúde dos seus funcionários e contrate agora! Conheça um pouco mais sobre o benefício
+            acessando os demais itens do Menu.</p>
+
+
+        <div class="row align-items-md-center justify-content-center mb-5 mt-5">
+            <div>
+                <h3>1</h3>
+            </div>
+            <div>
+                <h5 class="ml-3">Cadastre os dados da sua<br> empresa</h5>
+            </div>
+        </div>
+
+        <div class=" row align-items-md-center justify-content-center mb-5">
+            <div>
+                <h3>2</h3>
+            </div>
+            <div>
+                <h5 class="ml-3">Anexe o contrato social e<br> procuração</h5>
+            </div>
+        </div>
+
+        <div class="row align-items-md-center justify-content-center mb-5">
+            <div>
+                <h3>3</h3>
+            </div>
+            <div>
+                <h5 class="ml-3">Aceite as regras do convênio<br> e suas condições;</h5>
+            </div>
+        </div>
+
+        <div class="row align-items-md-center justify-content-center mb-5">
+            <div>
+                <h3>4</h3>
+            </div>
+            <div>
+                <h5 class="ml-3">Aguarde a assinatura e<br> implantação;</h5>
+            </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center mb-5">
+            <div>
+                <h3>5</h3>
+            </div>
+            <div>
+                <h5 class="ml-3">Aguarde 7 dias para poder<br> utilizar.</h5>
+            </div>
+        </div>
+        </div>
+
+        <h2 class="mb-5">Aproveite os benefícios de usar o Convênio Farmácia DPSP!</h2>
+        <h5 class="aqui">Aqui você pode contar com o cuidado dos melhores profissionais e serviços para seus
+            colaboradores.</h5>
+        <h5 class="mb-5 aqui">Veja o que você pode fazer nas nossas farmácias:</h5>
+
+        <div class="row">
+            <div class="col-md-5">
+                <img src="./imagens/servicos.jpg" class="img-fluid mb-5">
+            </div>
+
+            <div class="col-md-7 align-items-center mt-5">
+                <div id="carrosel_2" class="carousel slide carousel-multi-item mb-5" data-ride="carousel">
+
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                        <li data-target="#multi-item-example" data-slide-to="1"></li>
+
+                    </ol>
+                    <!--/.Indicators-->
+
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+
+                        <!--First slide-->
+                        <div class="carousel-item active">
+
+                            <div class="col-md-4" style="float:left;">
+                                <div class="card border-0">
+                                    <img class="card-img-top" src="./imagens/Capturar1.PNG" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h6 class="card-title text-center">Medir pressão, glicemina e temperatura</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4" style="float:left">
+                                <div class="card mb-2 border-0">
+                                    <img class="card-img-top" src="./imagens/Capturar2.PNG" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h6 class="card-title text-center">Aplicação de Injetáveis</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4" style="float:left">
+                                <div class="card mb-2 border-0">
+                                    <img class="card-img-top" src="./imagens/Capturar3.PNG" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h6 class="card-title text-center">Exames rápidos</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.First slide-->
+
+                        <!--Second slide-->
+                        <div class="carousel-item">
+
+                            <div class="col-md-4" style="float:left">
+                                <div class="card mb-2 border-0">
+                                    <img class="card-img-top" src="./imagens/Capturar5.PNG" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h6 class="card-title text-center">Telemedicina</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4" style="float:left">
+                                <div class="card mb-2 border-0">
+                                    <img class="card-img-top" src="./imagens/Capturar6.PNG" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h6 class="card-title text-center">Teste de Covid-19</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4" style="float:left">
+                                <div class="card mb-2 border-0">
+                                    <img class="card-img-top" src="./imagens/Capturar7.PNG" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h6 class="card-title text-center">Furar as orelhas</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.Second slide-->
+
+                    </div>
+                    <!--/.Slides-->
+
+                </div>
+                <!--/.Carousel Wrapper-->
+            </div>
+        </div>
+
+    </section>
+
+    <button id="subirTopo" class="btn btn-outline-dark" onclick="voltarTop()">
+        <i class="bi bi-arrow-90deg-up"></i> voltar ao topo
+      </button>
+
+
+
+      <footer>
+        <div class="redes">
+          Nos siga nas nossa resdes sociais:
+          <div class="icones">
+            <a href="" class="mr-4 text-reset">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="" class="mr-4 text-reset">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="" class="mr-4 text-reset">
+              <i class="bi bi-google"></i>
+            </a>
+            <a href="" class="mr-4 text-reset">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="" class="mr-4 text-reset">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+          
+        </div>
+        
+    
+        <div class="conteudo">
+          <div class="farma">
+            <h6>FARM+</h6>
+            <p id="texto">A jornada é sua e somente sua. Outros podem caminhar com vc mas ninguém pode caminhar por você.</p>
+          </div>
+          <div class="servicos">
+            <h6>SERVIÇOS</h6>
+            <p><a href="#">Convênio Farmácia</a></p>
+            <p><a href="#">Bulário Anvisa</a></p>
+            <p><a href="#">Testes Covid-19</a></p>
+            <p><a href="#">Aferir Pressão</a></p>
+          </div>
+          <div class="institucional">
+            <h6>INSTITUCIONAL</h6>
+            <p><a href="">Trabalhe conosco</a></p>
+            <p><a href="">Aplicativos</a></p>
+          </div>
+          <div class="privacidade">
+            <h6>PRIVACIDADE</h6>
+            <p><a href="#">Política de Cookies</a></p>
+            <p><a href="#">(LGPD)</a></p>
+            <p><a href="#">FAQ</a></p>
+            <p><a href="#">Termos de Uso</a></p>
+    
+          </div>
+        </div>
+    
+        <div class="copi">
+          <p>&copy;2021 Copyright: Farm+</p>
+        </div>
+    
+    
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+</body>
+
+</html>
