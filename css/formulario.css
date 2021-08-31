@@ -3,11 +3,15 @@
 }
 
 body{
+    background-color: white;
+}
+
+.navbar{
     background-color: steelblue;
 }
 
 .container{
-    background-color: white;
+    background-color: #F7F7F7;
 }
 
 #cadastro{
@@ -20,8 +24,12 @@ body{
     height: 60px;
 }
 
+.nav-link{
+    font-weight: bold;
+}
+
 h6{
-    color: #6DB4D6;
+    color: white;
 }
 
 
@@ -57,22 +65,22 @@ h5{
 
 
 .redes{
-    background-color: #343A40;
+    background-color: steelblue;
     display: flex;
     justify-content: space-between;
     height: 10vh;
     padding: 1.5rem;
     flex-wrap: wrap;
-    color: #6C757D;
+    color: white;
 
 }
 
 .conteudo{
     display: flex;
-    background-color: #343A40;
+    background-color: steelblue;
     justify-content: center;
     flex-wrap: wrap;
-    color: #6C757D;   
+    color: white;   
 }
 
 .farma{
@@ -80,11 +88,13 @@ h5{
     text-align: center;
     margin-right: 3%;
     margin-bottom: 20px;
+    
 }
 
 #texto{
     width: 50%;
     margin: 0 auto;
+    line-height: 2em;
 }
 
 .servicos{
@@ -95,7 +105,7 @@ h5{
 }
 
 .servicos a{
-    color: #6C757D;
+    color: white;
 }
 
 .institucional{
@@ -106,7 +116,7 @@ h5{
 }
 
 .institucional a{
-    color: #6C757D;
+    color: white;
 }
 
 .privacidade{
@@ -117,16 +127,16 @@ h5{
 }
 
 .privacidade a{
-    color: #6C757D;
+    color: white;
 }
 
 .copi{
     height: 7vh;
     text-align: center;
     padding: 1rem;
-    background-color: #31373D;
+    background-color: steelblue;
 }
 
 .copi p{
-    color: #6C757D;
+    color: white;
 }

@@ -4,11 +4,15 @@
 
 
 body{
+    background-color: white;
+}
+
+.navbar{
     background-color: steelblue;
 }
 
 .container{
-    background-color: white;
+    background-color: #F7F7F7;
 }
 .card-img-top{
     width: 100px;
@@ -16,8 +20,29 @@ body{
     margin: 0 auto;
 }
 
+.padrao{
+    height: 600px;
+    object-fit: cover;
+}
+
+#padrao2{
+    object-position: 50% 80%;
+}
+
+#padrao3{
+    object-position: bottom;
+}
+
+.nav-link{
+    font-weight: bold;
+}
+
 h6{
     color: #6DB4D6;
+}
+
+.titulo_rodape{
+    color: white;
 }
 
 h3{
@@ -58,22 +83,22 @@ h2{
 
 
 .redes{
-    background-color: #343A40;
+    background-color: steelblue;
     display: flex;
     justify-content: space-between;
     height: 10vh;
     padding: 1.5rem;
     flex-wrap: wrap;
-    color: #6C757D;
+    color: white;
 
 }
 
 .conteudo{
     display: flex;
-    background-color: #343A40;
+    background-color: steelblue;
     justify-content: center;
     flex-wrap: wrap;
-    color: #6C757D;   
+    color: white;   
 }
 
 .farma{
@@ -81,11 +106,13 @@ h2{
     text-align: center;
     margin-right: 3%;
     margin-bottom: 20px;
+    
 }
 
 #texto{
     width: 50%;
     margin: 0 auto;
+    line-height: 2em;
 }
 
 .servicos{
@@ -96,7 +123,7 @@ h2{
 }
 
 .servicos a{
-    color: #6C757D;
+    color: white;
 }
 
 .institucional{
@@ -107,7 +134,7 @@ h2{
 }
 
 .institucional a{
-    color: #6C757D;
+    color: white;
 }
 
 .privacidade{
@@ -118,16 +145,16 @@ h2{
 }
 
 .privacidade a{
-    color: #6C757D;
+    color: white;
 }
 
 .copi{
     height: 7vh;
     text-align: center;
     padding: 1rem;
-    background-color: #31373D;
+    background-color: steelblue;
 }
 
 .copi p{
-    color: #6C757D;
+    color: white;
 }

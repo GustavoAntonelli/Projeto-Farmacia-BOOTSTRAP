@@ -16,7 +16,7 @@ function modoEscuro() {
   }
   
   function modoClaro() {
-    document.body.style.backgroundColor = "steelblue";
+    document.body.style.backgroundColor = "white";
   }
 
 
